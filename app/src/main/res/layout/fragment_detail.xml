@@ -1,0 +1,97 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+                  android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    tools:context=".DetailFragment"
+                    tools:showIn="@layout/activity_detail">
+
+        <TextView
+            android:id="@+id/detail_date_weekday_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today"/>
+
+        <TextView
+            android:id="@+id/detail_date_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aug 22, 2016"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/detail_highTemp_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="81"/>
+
+                <TextView
+                    android:id="@+id/detail_lowTemp_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="74"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/detail_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/art_storm"/>
+
+                <TextView
+                    android:id="@+id/detail_forecast_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Asteroids"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/detail_humidity_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Humidity: 100%"/>
+
+        <TextView
+            android:id="@+id/detail_wind_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wind: 100 mph N"/>
+
+        <TextView
+            android:id="@+id/detail_pressure_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pressure: 2000 hPA"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
